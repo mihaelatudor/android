@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">MAD!</string>
+    <string name="act9_profilText">Profil</string>
+    <string name="act9_testeText">Teste</string>
+    <string name="act9_rapoarteText">Rapoarte</string>
+    <string name="act9_feedbackText">Feedback</string>
+    <string name="act9_csharpText">Categoria: C#</string>
+    <string name="act9_categ1_SeeAll">Vezi teste</string>
+    <string name="act9_javaText">Categoria: JAVA</string>
+    <string name="act9_javascriptText">Categoria: JAVASCRIPT</string>
+    <string name="act9_htmlCssText"><![CDATA[Categoria: HTML&CSS]]></string>
+    <string name="act9_cCppText"><![CDATA[Categoria: C&C++]]></string>
+    <string name="act10_creeazaTest">Creeaza</string>
+    <string name="act10_modificaTV">Modifica</string>
+    <string name="act10_testeleMeleTv">Testele mele</string>
+    <string name="act10_stergeTV">Sterge</string>
+    <string name="act10_hintListaTeste">Selectati testul pe care doriti sa-l modificati/stergeti</string>
+    <string name="act11_grupaCText">Grupa C</string>
+    <string name="act11_seriaCText">Seria C</string>
+    <string name="act11_seriaDText">Seria D</string>
+    <string name="act11_seriaEText">Seria E</string>
+    <string name="act11_NumePrenumeTR">Nume Prenume:</string>
+    <string name="act11_CnpTR">CNP:</string>
+    <string name="act11_GrupaSerieTR">Seria Grupa:</string>
+    <string name="act11_testNoteTR">Test Nota:</string>
+    <string name="act12_rapStudentiText">Raport Situatie Studenti</string>
+    <string name="act12_rapGrupeText">Raport Situatie Grupe</string>
+    <string name="act12_rapTesteText">Raport Situatie Teste</string>
+    <string name="act12_rapCategTesteText">Raport Situatie Categorii Teste</string>
+    <string name="act1_userTv">User:</string>
+    <string name="act1_nameText">Nume</string>
+    <string name="act1_parolaText">Parola:</string>
+    <string name="act1_loginText">Login</string>
+    <string name="act1_registerText">Register</string>
+    <string name="act1_recuperareParolaText">Recuperare parola</string>
+    <string name="act2_tipText">Tip</string>
+    <string name="act2_facultateText">Facultate</string>
+    <string name="act2_emailText">Email</string>
+    <string name="act2_numePrenumeText">Nume si prenume</string>
+    <string name="act3_recuperareText">Recuperare!</string>
+    <string-array name="act10_listaTeste">
+        <item>Test1</item>
+        <item>Test2</item>
+        <item>Test3</item>
+        <item>Test4</item>
+    </string-array>
+    <string name="act5_codText">Introduceti codul testului:</string>
+    <string name="act5_codHint">ex: 1234</string>
+    <string name="act5_ImgBrain" />
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="act6_OutputIntrebare">Ce limbaje de programare stiti?</string>
+    <string name="act6_raspuns1">C#, Java, JavaScript, C/C++</string>
+    <string name="act6_Raspuns2">Java</string>
+    <string name="act6_Raspuns3">Javascript</string>
+    <string name="act6_raspuns4">C/C++</string>
+    <string name="act6_Btn">Inregistreaza raspunsul</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_punctaj">PunctajActivity</string>
+    <string name="act7_txtPunctaj">Punctaj:</string>
+    <string name="act7_txtNota">Ati obtinut nota</string>
+    <string name="act7_nNota">8</string>
+    <string name="title_activity_8">Activity8</string>
+    <string name="act8_intrebareText">Intrebarea:</string>
+    <string name="act8_IntrebareEdit">ex: Ce limbaje de programare stiti?</string>
+    <string name="act8_IntrebareHint">Intrebarea pe care doriti sa o scrieti.</string>
+    <string name="act8_raspunsuri">Variante de raspuns</string>
+    <string name="act8_Corect">Raspuns corect</string>
+    <string name="act7_IntrGresiteTxt">Numarul de intrebari gresite este:</string>
+    <string name="act7_nrIntr">2</string>
+    <string name="act8_raspuns">C#, Java, JavaScript, C/C++</string>
+    <string name="act8_raspuns1">C#</string>
+    <string name="act8_raspuns2">Java</string>
+    <string name="act8_adaugaRaspunsuri">Adauga Raspunsuri</string>
+    <string name="act8_stergeRaspunsuri">Sterge Raspunsuri</string>
+    <string name="act8_raspunsHint">O varianta de raspuns.</string>
+    <string name="act8_activeazaTimpul">Activeaza timpul de raspuns:</string>
+    <string name="act8_salveazaTxt">Saveaza</string>
+    <string name="act6_editareBtnTxt">Editare Raspuns</string>
+    <string name="act5_salveazaTxt">Salveaza</string>
+    <string name="act1_parolaET">Parola</string>
+    <string name="act2_userHint">User</string>
+    <string name="act2_emailHint">E-mail</string>
+    <string name="act2_usernameHint">Username</string>
+    <string name="act2_parolaHint">ex: 123</string>
+    <string name="act2_registerText">Register</string>
+    <string name="act4_feedbackText">Feedback</string>
+</resources>

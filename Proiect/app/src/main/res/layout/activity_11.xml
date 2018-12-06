@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity11">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/act11_grupeGB">
+        <RadioButton
+            android:id="@+id/act11_seriaCrdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/act11_seriaCText" />
+
+        <RadioButton
+            android:id="@+id/act11_seriaDrdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/act11_seriaDText" />
+
+        <RadioButton
+            android:id="@+id/act11_seriaErdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/act11_seriaEText" />
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/act11_tabelStudenti">
+        <TableRow>
+            <TextView
+                android:text="@string/act11_NumePrenumeTR"
+                android:padding="5dp"/>
+            <TextView
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/act11_CnpTR"
+                android:padding="5dp"/>
+            <TextView
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+              android:text="@string/act11_GrupaSerieTR"
+                android:padding="5dp"/>
+            <TextView
+                android:text="@string/app_name"
+                android:padding="5dp"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/act11_testNoteTR"/>
+           <TextView
+               android:text="@string/app_name"
+               android:padding="5dp"
+               android:gravity="center"/>
+            <EditText
+                android:id="@+id/act11_notaET"
+                android:text="10"/>
+        </TableRow>
+    </TableLayout>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act11_grupeGB"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        />
+
+
+</RelativeLayout>

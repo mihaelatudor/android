@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMistyRose"
+    tools:context=".noulNume"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <EditText
+        android:id="@+id/act2_user"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/act2_userHint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/act2_parola"
+        app:layout_constraintEnd_toEndOf="@+id/act2_email"
+        app:layout_constraintStart_toStartOf="@+id/act2_email"
+        app:layout_constraintTop_toBottomOf="@+id/act2_email" />
+
+    <TextView
+        android:id="@+id/act2_tv_tip"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/act2_tipText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/act2_tv_facultate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_tv_facultate"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tv_facultate"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/act2_tv_facultate"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/act2_facultateText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/act2_tv_parola"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_tv_parola"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tv_parola"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/act2_tv_parola"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/act1_parolaText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/act2_tv_user"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_tv_user"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tv_user"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/act2_tv_email"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/act2_emailText"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/act2_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tv_Nume" />
+
+    <TextView
+        android:id="@+id/act2_tv_Nume"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/act2_numePrenumeText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/act2_tv_user"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/act2_usernameHint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/act2_user"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tv_email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/act2_nume"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/act2_numePrenumeText"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/act2_tv_Nume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/act2_tv_Nume"
+        app:layout_constraintTop_toTopOf="@+id/act2_tv_Nume"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/act2_email"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/act2_emailHint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/act2_nume"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_nume"
+        app:layout_constraintTop_toBottomOf="@+id/act2_nume"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <EditText
+        android:id="@+id/act2_parola"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/act2_parolaHint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/act2_tv_parola"
+        app:layout_constraintEnd_toEndOf="@+id/act2_user"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_user"
+        app:layout_constraintTop_toBottomOf="@+id/act2_user"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <Spinner
+        android:id="@+id/act2_facultate"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/listaFacultati"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/act2_tv_facultate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toEndOf="@+id/act2_tv_facultate"
+        app:layout_constraintTop_toTopOf="@+id/act2_tv_facultate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/act2_tip"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/listaTipuri"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/act2_tv_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toEndOf="@+id/act2_tv_tip"
+        app:layout_constraintTop_toTopOf="@+id/act2_tv_tip"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/act2_RegisterBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/act2_registerText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/act2_tip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/act2_tip"
+        app:layout_constraintTop_toBottomOf="@+id/act2_tip"
+        app:layout_constraintVertical_bias="0.175" />
+
+</android.support.constraint.ConstraintLayout>

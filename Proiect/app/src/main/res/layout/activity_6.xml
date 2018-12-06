@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activity6"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <ScrollView
+        android:id="@+id/act6_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/act6_1Ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/act6_Ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/act6_TxtIntrebare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="@string/act6_OutputIntrebare"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:minLines="4"
+                    android:background="@drawable/border"/>
+
+                <ProgressBar
+                    android:id="@+id/act6_timeBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progress="30" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/act6_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/act6_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/act6_raspuns1" />
+
+                <RadioButton
+                    android:id="@+id/act6_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/act6_Raspuns2" />
+
+                <RadioButton
+                    android:id="@+id/act6_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/act6_Raspuns3" />
+
+                <RadioButton
+                    android:id="@+id/act6_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/act6_raspuns4" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/act6_Ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/act6_btnRaspuns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:onClick="clickRaspuns"
+            android:text="@string/act6_Btn"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/act6_editareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:onClick="clickRaspuns"
+            android:text="@string/act6_editareBtnTxt"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/act6_seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+</LinearLayout>

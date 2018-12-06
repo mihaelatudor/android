@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity9">
+
+    <item android:id="@+id/act9_profil"
+        android:title="@string/act9_profilText"></item>
+    <item android:id="@+id/act9_teste"
+        android:title="@string/act9_testeText"></item>
+    <item android:id="@+id/act9_rapoarte"
+        android:title="@string/act9_rapoarteText"></item>
+    <item android:id="@+id/act9_feedback"
+        android:title="@string/act9_feedbackText"></item>
+
+</menu>
