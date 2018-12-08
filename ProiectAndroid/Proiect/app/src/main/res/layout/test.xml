@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TestActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <ScrollView
+        android:id="@+id/scrollVTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/intrebareTxtTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="@string/outputIntrebareString"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:minLines="4"
+                    android:background="@drawable/border"/>
+
+                <ProgressBar
+                    android:id="@+id/timeBarTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progress="30" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns1" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns2" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns3" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns4" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/raspunsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="clickRaspuns"
+            android:text="@string/btnTestInregistreaza"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:visibility="visible"
+            tools:style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <Button
+            android:id="@+id/editareBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="clickRaspuns"
+            android:text="@string/editareBtnTxt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:visibility="visible"
+            tools:style="@style/Widget.AppCompat.Button" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RapoarteActivity">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <CalendarView
+        android:id="@+id/calendarRapoarte"
+        android:layout_width="306dp"
+        android:layout_height="297dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <ImageButton
+        android:id="@+id/rapStudentiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/calendarRapoarte"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-16dp"
+        android:layout_marginBottom="154dp"
+        app:srcCompat="@drawable/studentirap" />
+
+    <TextView
+        android:id="@+id/rapStudentiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginBottom="175dp"
+        android:text="@string/rapStudentiText"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/rapGrupeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapStudentiTV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-175dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/gruperap" />
+
+    <TextView
+        android:id="@+id/rapGrupeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapStudentiBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-154dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/rapGrupeText"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/rapTesteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapGrupeTV"
+        android:layout_alignStart="@+id/rapStudentiBtn"
+        app:srcCompat="@drawable/testerap" />
+
+    <TextView
+        android:id="@+id/rapTesteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapGrupeBtn"
+        android:layout_alignStart="@+id/rapStudentiTV"
+        android:text="@string/rapTesteString"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/rapCategTesteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapTesteTv"
+        android:layout_alignEnd="@+id/rapGrupeBtn"
+        app:srcCompat="@drawable/categorietesterap" />
+
+    <TextView
+        android:id="@+id/rapCategTesteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapTesteBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="85dp"
+        android:text="@string/rapCategTesteText"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

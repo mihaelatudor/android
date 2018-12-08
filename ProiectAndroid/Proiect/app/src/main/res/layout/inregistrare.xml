@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMistyRose"
+    tools:context=".InregistreareActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <EditText
+        android:id="@+id/userEditInregistrare"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/userHint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/parolaEditInregistrare"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditInregistrare"
+        app:layout_constraintStart_toStartOf="@+id/emailEditInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditInregistrare" />
+
+    <TextView
+        android:id="@+id/tipTxtInregistrare"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/tipText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/facultateTxtInregistrare"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/facultateText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/parolaTxtInregistrare"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/parolaTxtInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/parolaTxtInregistrare"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/parolaTxtInregistrare"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/parolaText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userTVInregistrare"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userTVInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/userTVInregistrare"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/emailTVInregistrare"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/emailString"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/emailEditInregistrare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numeTxtVInregistrare" />
+
+    <TextView
+        android:id="@+id/numeTxtVInregistrare"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/numePrenumeString"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/userTVInregistrare"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/usernameHint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userEditInregistrare"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTVInregistrare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/numeEditIndregistrare"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/numePrenumeString"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/numeTxtVInregistrare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/numeTxtVInregistrare"
+        app:layout_constraintTop_toTopOf="@+id/numeTxtVInregistrare"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/emailEditInregistrare"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/emailHint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/numeEditIndregistrare"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/numeEditIndregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/numeEditIndregistrare"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <EditText
+        android:id="@+id/parolaEditInregistrare"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/parolaHint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/parolaTxtInregistrare"
+        app:layout_constraintEnd_toEndOf="@+id/userEditInregistrare"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userEditInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/userEditInregistrare"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <Spinner
+        android:id="@+id/facultateSpinner"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/listaFacultati"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toEndOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintTop_toTopOf="@+id/facultateTxtInregistrare"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/tipSpinner"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/listaTipuri"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tipTxtInregistrare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toEndOf="@+id/tipTxtInregistrare"
+        app:layout_constraintTop_toTopOf="@+id/tipTxtInregistrare"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/inregistrareBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/registerText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tipSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tipSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/tipSpinner"
+        app:layout_constraintVertical_bias="0.175" />
+
+</android.support.constraint.ConstraintLayout>

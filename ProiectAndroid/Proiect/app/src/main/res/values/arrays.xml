@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listaFacultati">
+        <item>CSIE</item>
+        <item>CIG</item>
+    </string-array>
+    <string-array name="listaTipuri">
+        <item>Student</item>
+        <item>Profesor</item>
+    </string-array>
+</resources>
