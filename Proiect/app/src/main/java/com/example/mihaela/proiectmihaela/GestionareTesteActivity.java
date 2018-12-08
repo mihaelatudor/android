@@ -5,64 +5,63 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toolbar;
 
-public class Activity10 extends AppCompatActivity {
+public class GestionareTesteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_10);
-        Toolbar toolbar=findViewById(R.id.act9_toolbar);
-        toolbar.inflateMenu(R.menu.act9_meniu);
-        ImageButton omuletBtn=findViewById(R.id.act9_omuletImgBtn);
+        setContentView(R.layout.gestionare_teste);
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.meniu);
+        ImageButton omuletBtn=findViewById(R.id.omuletImgBtn);
         omuletBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity11.class);
+                Intent intent=new Intent(getApplicationContext(),ProfilActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton offBtn=findViewById(R.id.act9_offImgBtn);
+        ImageButton offBtn=findViewById(R.id.offImgBtn);
         offBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity4.class);
+                Intent intent=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton setariBtn=findViewById(R.id.act9_setariImgBtn);
+        ImageButton setariBtn=findViewById(R.id.setariImgBtn);
         setariBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity10.class);
+                Intent intent=new Intent(getApplicationContext(),GestionareTesteActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton creeazaBtn=findViewById(R.id.act10_creeazaImgBtn);
+        ImageButton creeazaBtn=findViewById(R.id.creeazaImgBtn);
         creeazaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity8.class);
+                Intent intent=new Intent(getApplicationContext(),CreareTestActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton testeBtn=findViewById(R.id.act10_testelemeleImgBtn);
+        ImageButton testeBtn=findViewById(R.id.testelemeleImgBtn);
         testeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity9.class);
+                Intent intent=new Intent(getApplicationContext(),VizualizareTesteActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton modificaBtn=findViewById(R.id.act10_modificaImgBtn);
+        ImageButton modificaBtn=findViewById(R.id.modificaImgBtn);
         modificaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity5.class);
+                Intent intent=new Intent(getApplicationContext(),InscriereTestActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +69,7 @@ public class Activity10 extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.act9_meniu,menu);
+        getMenuInflater().inflate(R.menu.meniu,menu);
         return true;
     }
 }

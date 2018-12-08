@@ -7,40 +7,40 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toolbar;
 
-public class Activity5 extends AppCompatActivity {
+public class InscriereTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_5);
-        Toolbar toolbar=findViewById(R.id.act9_toolbar);
-        toolbar.inflateMenu(R.menu.act9_meniu);
-        ImageButton omuletBtn=findViewById(R.id.act9_omuletImgBtn);
+        setContentView(R.layout.inscriere_test);
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.meniu);
+        ImageButton omuletBtn=findViewById(R.id.omuletImgBtn);
         omuletBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity11.class);
+                Intent intent=new Intent(getApplicationContext(),ProfilActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton offBtn=findViewById(R.id.act9_offImgBtn);
+        ImageButton offBtn=findViewById(R.id.offImgBtn);
         offBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity4.class);
+                Intent intent=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton setariBtn=findViewById(R.id.act9_setariImgBtn);
+        ImageButton setariBtn=findViewById(R.id.setariImgBtn);
         setariBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity10.class);
+                Intent intent=new Intent(getApplicationContext(),GestionareTesteActivity.class);
                 startActivity(intent);
             }
         });
     }
 
-    public void act5_SalveazaBtn(View view) {
+    public void salveazaBtn(View view) {
     }
 }

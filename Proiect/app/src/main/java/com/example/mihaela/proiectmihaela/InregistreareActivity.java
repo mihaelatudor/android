@@ -8,45 +8,45 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toolbar;
 
-public class noulNume extends AppCompatActivity {
+public class InregistreareActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.inregistrare);
 
-        Toolbar toolbar=findViewById(R.id.act9_toolbar);
-        toolbar.inflateMenu(R.menu.act9_meniu);
-        ImageButton omuletBtn=findViewById(R.id.act9_omuletImgBtn);
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.meniu);
+        ImageButton omuletBtn=findViewById(R.id.omuletImgBtn);
         omuletBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity11.class);
+                Intent intent=new Intent(getApplicationContext(),ProfilActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton offBtn=findViewById(R.id.act9_offImgBtn);
+        ImageButton offBtn=findViewById(R.id.offImgBtn);
         offBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity4.class);
+                Intent intent=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton setariBtn=findViewById(R.id.act9_setariImgBtn);
+        ImageButton setariBtn=findViewById(R.id.setariImgBtn);
         setariBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity10.class);
+                Intent intent=new Intent(getApplicationContext(),GestionareTesteActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button registerBtn=findViewById(R.id.act2_RegisterBtn);
+        Button registerBtn=findViewById(R.id.inregistrareBtn);
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),ActivityLogin.class);
+                Intent intent=new Intent(getApplicationContext(),LogareActivity.class);
                 startActivity(intent);
             }
         });

@@ -11,56 +11,56 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toolbar;
 
-public class ActivityLogin extends AppCompatActivity {
+public class LogareActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_1);
+        setContentView(R.layout.logare);
 
-        Toolbar toolbar=findViewById(R.id.act9_toolbar);
-        toolbar.inflateMenu(R.menu.act9_meniu);
-        ImageButton omuletBtn=findViewById(R.id.act9_omuletImgBtn);
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.meniu);
+        ImageButton omuletBtn=findViewById(R.id.omuletImgBtn);
         omuletBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity11.class);
+                Intent intent=new Intent(getApplicationContext(),ProfilActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton offBtn=findViewById(R.id.act9_offImgBtn);
+        ImageButton offBtn=findViewById(R.id.offImgBtn);
         offBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity4.class);
+                Intent intent=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton setariBtn=findViewById(R.id.act9_setariImgBtn);
+        ImageButton setariBtn=findViewById(R.id.setariImgBtn);
         setariBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity10.class);
+                Intent intent=new Intent(getApplicationContext(),GestionareTesteActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button btnRegister=findViewById(R.id.act1_btnRegister);
+        Button btnRegister=findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),noulNume.class);
+                Intent intent=new Intent(getApplicationContext(),InregistreareActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button btnRecuperare=findViewById(R.id.act1_btnRecuperareParola);
+        Button btnRecuperare=findViewById(R.id.recuperareParolaBtn);
         btnRecuperare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText username=findViewById(R.id.act1_user);
+                EditText username=findViewById(R.id.userEditL);
                 String email=username.getText().toString()+"@stud.ase.ro";
-                Intent intent=new Intent(getApplicationContext(),Activity3.class);
+                Intent intent=new Intent(getApplicationContext(),RecuperareParolaActivity.class);
                 intent.putExtra("email",email);
                 startActivity(intent);
             }
@@ -69,27 +69,27 @@ public class ActivityLogin extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.act9_meniu,menu);
+        getMenuInflater().inflate(R.menu.meniu,menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.act9_teste:
-                Intent intent=new Intent(getApplicationContext(),Activity9.class);
+            case R.id.teste:
+                Intent intent=new Intent(getApplicationContext(),VizualizareTesteActivity.class);
                 startActivity(intent);
                  return true;
-            case R.id.act9_rapoarte:
-                Intent i=new Intent(getApplicationContext(),Activity12.class);
+            case R.id.rapoarte:
+                Intent i=new Intent(getApplicationContext(),RapoarteActivity.class);
                 startActivity(i);
                 return true;
-            case R.id.act9_feedback:
-                Intent in=new Intent(getApplicationContext(),Activity4.class);
+            case R.id.feedback:
+                Intent in=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(in);
                 return true;
-            case R.id.act9_profil:
-                Intent inte=new Intent(getApplicationContext(),Activity5.class);
+            case R.id.profil:
+                Intent inte=new Intent(getApplicationContext(),InscriereTestActivity.class);
                 startActivity(inte);
                 return true;
                  default:

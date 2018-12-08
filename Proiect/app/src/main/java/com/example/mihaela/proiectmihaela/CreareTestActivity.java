@@ -9,53 +9,53 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toolbar;
 
-public class Activity8 extends AppCompatActivity {
+public class CreareTestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_8);
-        Toolbar toolbar=findViewById(R.id.act9_toolbar);
-        toolbar.inflateMenu(R.menu.act9_meniu);
-        ImageButton omuletBtn=findViewById(R.id.act9_omuletImgBtn);
+        setContentView(R.layout.creare_test);
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        toolbar.inflateMenu(R.menu.meniu);
+        ImageButton omuletBtn=findViewById(R.id.omuletImgBtn);
         omuletBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity11.class);
+                Intent intent=new Intent(getApplicationContext(),ProfilActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton offBtn=findViewById(R.id.act9_offImgBtn);
+        ImageButton offBtn=findViewById(R.id.offImgBtn);
         offBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity4.class);
+                Intent intent=new Intent(getApplicationContext(),FeedBackActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton setariBtn=findViewById(R.id.act9_setariImgBtn);
+        ImageButton setariBtn=findViewById(R.id.setariImgBtn);
         setariBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Activity10.class);
+                Intent intent=new Intent(getApplicationContext(),GestionareTesteActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button salveazaBtn=findViewById(R.id.act8_salveaza);
+        Button salveazaBtn=findViewById(R.id.salveazaBtn);
         salveazaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText intrebareET=findViewById(R.id.act8_inputIntrebare);
+                EditText intrebareET=findViewById(R.id.inputIntrebareEdit);
                 String intrebare= intrebareET.getText().toString();
-                EditText raspuns1Et=findViewById(R.id.act8_raspunsEdit);
+                EditText raspuns1Et=findViewById(R.id.raspunsEdit);
                 String raspuns1=raspuns1Et.getText().toString();
-                EditText raspuns2Et=findViewById(R.id.act8_raspunsEdit1);
+                EditText raspuns2Et=findViewById(R.id.raspunsEditCreare);
                 String raspuns2=raspuns2Et.getText().toString();
-                EditText raspuns3Et=findViewById(R.id.act8_raspunsEdit2);
+                EditText raspuns3Et=findViewById(R.id.raspunsEdit2Creare);
                 String raspuns3=raspuns3Et.getText().toString();
 
-                Intent intent=new Intent(getApplicationContext(),Activity6.class);
+                Intent intent=new Intent(getApplicationContext(),TestActivity.class);
                 intent.putExtra("intrebare",intrebare);
            //     intent.putExtra("raspuns1",raspuns1);
 //                intent.putExtra("raspuns2",raspuns2);
@@ -71,6 +71,6 @@ public class Activity8 extends AppCompatActivity {
     public void act8_stergeClick(View view) {
     }
 
-    public void act8_salveazaClick(View view) {
+    public void salveazaCreare(View view) {
     }
 }

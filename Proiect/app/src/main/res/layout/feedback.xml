@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity4">
+    tools:context=".FeedBackActivity">
 
     <include layout="@layout/toolbar_activitati"></include>
 
     <TextView
-        android:id="@+id/act4_TV"
+        android:id="@+id/textFeedback"
         android:layout_width="177dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
@@ -17,7 +17,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:padding="15dp"
-        android:text="@string/act4_feedbackText"
+        android:text="@string/feedbackText"
         android:textSize="20sp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.293" />
 
     <EditText
-        android:id="@+id/act4_feedback"
+        android:id="@+id/feedbackEdit"
         android:layout_width="226dp"
         android:layout_height="112dp"
         android:layout_marginTop="8dp"
@@ -37,23 +37,23 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/act4_TV"
-        app:layout_constraintStart_toStartOf="@+id/act4_TV"
-        app:layout_constraintTop_toBottomOf="@+id/act4_TV"
+        app:layout_constraintEnd_toEndOf="@+id/textFeedback"
+        app:layout_constraintStart_toStartOf="@+id/textFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/textFeedback"
         app:layout_constraintVertical_bias="0.022" />
 
     <Button
-        android:id="@+id/act4_buttonFeedback"
+        android:id="@+id/feedbackBtn"
         android:layout_width="184dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Trimite feedback"
+        android:text="@string/trimiteFeedBString"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/act4_feedback"
+        app:layout_constraintEnd_toEndOf="@+id/feedbackEdit"
         app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="@+id/act4_feedback"
-        app:layout_constraintTop_toBottomOf="@+id/act4_feedback"
+        app:layout_constraintStart_toStartOf="@+id/feedbackEdit"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackEdit"
         app:layout_constraintVertical_bias="0.052" />
 
 </android.support.constraint.ConstraintLayout>

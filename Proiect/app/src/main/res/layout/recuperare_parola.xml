@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity3">
+    tools:context=".RecuperareParolaActivity">
 
     <include layout="@layout/toolbar_activitati"></include>
 
     <TextView
-        android:id="@+id/act3_TV"
+        android:id="@+id/textRecuperare"
         android:layout_width="229dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Introduceti adresa de email"
+        android:layout_marginBottom="4dp"
+        android:text="@string/intordAdresa"
         android:textAlignment="center"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,34 +27,34 @@
         app:layout_constraintVertical_bias="0.338" />
 
     <EditText
-        android:id="@+id/act3_emailR"
+        android:id="@+id/emailEditRecuperare"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/emailHintR"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:hint="email"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/act3_TV"
-        app:layout_constraintStart_toStartOf="@+id/act3_TV"
-        app:layout_constraintTop_toBottomOf="@+id/act3_TV"
+        app:layout_constraintEnd_toEndOf="@+id/textRecuperare"
+        app:layout_constraintStart_toStartOf="@+id/textRecuperare"
+        app:layout_constraintTop_toBottomOf="@+id/textRecuperare"
         app:layout_constraintVertical_bias="0.037" />
 
     <Button
-        android:id="@+id/act3_recuperareParolaBtn"
+        android:id="@+id/recuperareParolaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/act3_recuperareText"
+        android:text="@string/recuperareText"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/act3_emailR"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditRecuperare"
         app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/act3_emailR"
-        app:layout_constraintTop_toBottomOf="@+id/act3_emailR"
+        app:layout_constraintStart_toStartOf="@+id/emailEditRecuperare"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditRecuperare"
         app:layout_constraintVertical_bias="0.197" />
 
 </android.support.constraint.ConstraintLayout>

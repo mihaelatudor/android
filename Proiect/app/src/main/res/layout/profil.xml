@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity11">
+    tools:context=".ProfilActivity">
 
     <include layout="@layout/toolbar_activitati"></include>
 
@@ -16,28 +16,28 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="80dp"
         android:orientation="horizontal"
-        android:id="@+id/act11_grupeGB">
+        android:id="@+id/grupeGBprofil">
         <RadioButton
-            android:id="@+id/act11_seriaCrdBtn"
+            android:id="@+id/seriaCrdBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/act11_seriaCText" />
+            android:text="@string/seriaCText" />
 
         <RadioButton
-            android:id="@+id/act11_seriaDrdBtn"
+            android:id="@+id/seriaDrdBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
-            android:text="@string/act11_seriaDText" />
+            android:text="@string/seriaDText" />
 
         <RadioButton
-            android:id="@+id/act11_seriaErdBtn"
+            android:id="@+id/seriaErdBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/act11_seriaEText" />
+            android:text="@string/seriaEText" />
     </RadioGroup>
 
     <TableLayout
@@ -47,10 +47,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="150dp"
-        android:id="@+id/act11_tabelStudenti">
+        android:id="@+id/tabelStudenti">
         <TableRow>
             <TextView
-                android:text="@string/act11_NumePrenumeTR"
+                android:text="@string/numePrenumeTR"
                 android:padding="5dp"/>
             <TextView
                 android:gravity="center"
@@ -59,7 +59,7 @@
         </TableRow>
         <TableRow>
             <TextView
-                android:text="@string/act11_CnpTR"
+                android:text="@string/cnpTR"
                 android:padding="5dp"/>
             <TextView
                 android:gravity="center"
@@ -68,7 +68,7 @@
         </TableRow>
         <TableRow>
             <TextView
-              android:text="@string/act11_GrupaSerieTR"
+              android:text="@string/grupaSerieTR"
                 android:padding="5dp"/>
             <TextView
                 android:text="@string/app_name"
@@ -77,21 +77,23 @@
         </TableRow>
         <TableRow>
             <TextView
-                android:text="@string/act11_testNoteTR"/>
+                android:text="@string/testNoteTR"/>
            <TextView
                android:text="@string/app_name"
                android:padding="5dp"
                android:gravity="center"/>
+
             <EditText
-                android:id="@+id/act11_notaET"
-                android:text="10"/>
+                android:id="@+id/notaETProfil"
+                android:inputType="text"
+                android:text="@string/notaString1" />
         </TableRow>
     </TableLayout>
 
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/act11_grupeGB"
+        android:layout_below="@+id/grupeGBprofil"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="11dp"
         />

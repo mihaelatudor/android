@@ -9,22 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity9" />
-        <activity android:name=".Activity10" />
-        <activity android:name=".Activity11" />
-        <activity android:name=".Activity12" />
-        <activity android:name=".ActivityLogin"><intent-filter>
+        <activity android:name=".VizualizareTesteActivity" />
+        <activity android:name=".GestionareTesteActivity" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".RapoarteActivity" />
+        <activity android:name=".LogareActivity"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
-        <activity android:name=".noulNume" />
-        <activity android:name=".Activity3" />
-        <activity android:name=".Activity4" />
-        <activity android:name=".Activity5" />
-        <activity android:name=".Activity6"></activity>
-        <activity android:name=".Activity7"></activity>
-        <activity android:name=".Activity8"></activity>
+        <activity android:name=".InregistreareActivity" />
+        <activity android:name=".RecuperareParolaActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".InscriereTestActivity" />
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".RezultatTestActivity"></activity>
+        <activity android:name=".CreareTestActivity"></activity>
     </application>
 
 </manifest>

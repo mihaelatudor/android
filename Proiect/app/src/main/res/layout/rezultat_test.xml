@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".Activity7"
+    tools:context=".RezultatTestActivity"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar_activitati"></include>
 
     <LinearLayout
-        android:id="@+id/act7_Ll1"
+        android:id="@+id/linearL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -19,27 +19,27 @@
         android:paddingRight="16dp">
 
         <TextView
-            android:id="@+id/act7_txNota"
+            android:id="@+id/notaTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/act7_txtNota"
+            android:text="@string/notaString"
             android:textSize="18sp"
             android:visibility="visible" />
 
         <TextView
-            android:id="@+id/act7_Nota"
+            android:id="@+id/notaTxtV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/act7_nNota"
+            android:text="@string/nNota"
             android:textSize="18sp"
             android:visibility="visible" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/act7_Ll2"
+        android:id="@+id/linearL2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -48,15 +48,15 @@
         android:paddingTop="15dp">
 
         <TextView
-            android:id="@+id/act7_Punctaj"
+            android:id="@+id/punctajTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
-            android:text="@string/act7_txtPunctaj"
+            android:text="@string/punctajTxt"
             android:textSize="18sp" />
 
         <RatingBar
-            android:id="@+id/act7_RezultatTest"
+            android:id="@+id/ratingBarTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -67,26 +67,26 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/act7_Ll3"
+        android:id="@+id/linearL3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <TextView
-            android:id="@+id/act7_IntrebariGresite"
+            android:id="@+id/intrebariGresiteTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
             android:paddingRight="15dp"
-            android:text="@string/act7_IntrGresiteTxt"
+            android:text="@string/intrGresiteString"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/act7_nrIntrG"
+            android:id="@+id/nrIntrGTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/act7_nrIntr"
+            android:text="@string/nrIntr"
             android:textSize="18sp" />
     </LinearLayout>
 
