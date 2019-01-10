@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TestActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <ScrollView
+        android:id="@+id/scrollVTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/intrebareTxtTest"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:fontFamily="serif-monospace"
+                    android:minLines="4"
+                    android:padding="10dp"
+                    android:text="@string/outputIntrebareString"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/timeBarTest"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progress="30" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns1"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns2"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns3"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:onClick="clickRaspuns"
+                    android:text="@string/raspuns4"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/raspunsBtn"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:onClick="clickRaspuns"
+            android:text="@string/btnTestInregistreaza"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:visibility="visible"
+            tools:style="@style/Widget.AppCompat.Button.Borderless" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/editareBtn"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:onClick="clickRaspuns"
+            android:text="@string/editareBtnTxt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:visibility="visible"
+            tools:style="@style/Widget.AppCompat.Button" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:soundEffectsEnabled="true" />
+
+</LinearLayout>

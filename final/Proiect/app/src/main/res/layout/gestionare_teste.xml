@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionareTesteActivity"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="-113dp"
+        android:layout_toStartOf="@+id/modificaText"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="@string/gestionareString"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/creeazaImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/create" />
+
+    <TextView
+        android:id="@+id/creeazaText"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="356dp"
+        android:fontFamily="casual"
+        android:text="@string/creeazaTest"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/modificaImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/creeazaImgBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="133dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/modifica" />
+
+    <TextView
+        android:id="@+id/modificaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/creeazaText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="casual"
+        android:text="@string/modificaTV"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/testelemeleImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/creeazaImgBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_toStartOf="@+id/creeazaText"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/testelemele" />
+
+    <TextView
+        android:id="@+id/testeleMeleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/creeazaText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="206dp"
+        android:fontFamily="casual"
+        android:text="@string/testeleMeleTv"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/stergeImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/modificaImgBtn"
+        android:layout_alignTop="@+id/testelemeleImgBtn"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="-4dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/stergeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/modificaText"
+        android:layout_alignTop="@+id/testeleMeleText"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="casual"
+        android:text="@string/stergeTV"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/teste_gestionare_ListV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/testeleMeleText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"></ListView>
+
+</RelativeLayout>

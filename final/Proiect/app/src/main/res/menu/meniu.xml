@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VizualizareTesteActivity">
+
+    <item android:id="@+id/profil"
+        android:title="@string/profilText"></item>
+    <item android:id="@+id/teste"
+        android:title="@string/testeText"></item>
+    <item android:id="@+id/rapoarte"
+        android:title="@string/rapoarteText"></item>
+    <item android:id="@+id/feedback"
+        android:title="@string/feedbackTextTeste"></item>
+
+</menu>

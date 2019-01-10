@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/grupeGBprofil">
+
+        <RadioButton
+            android:id="@+id/seriaCrdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="@string/seriaCText" />
+
+        <RadioButton
+            android:id="@+id/seriaDrdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="casual"
+            android:text="@string/seriaDText" />
+
+        <RadioButton
+            android:id="@+id/seriaErdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="@string/seriaEText" />
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tabelStudenti"
+        android:layout_width="290dp"
+        android:layout_height="231dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp">
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/numePrenumeTR" />
+
+            <TextView
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/app_name" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/cnpTR" />
+
+            <TextView
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/app_name" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="@string/grupaSerieTR" />
+
+            <TextView
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/app_name" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="casual"
+                android:text="@string/testNoteTR" />
+
+            <TextView
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/app_name" />
+
+            <EditText
+                android:id="@+id/notaETProfil"
+                android:fontFamily="casual"
+                android:inputType="text"
+                android:text="@string/notaString1" />
+
+        </TableRow>
+    </TableLayout>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grupeGBprofil"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        />
+
+    <ImageView
+        android:layout_width="316dp"
+        android:layout_height="197dp"
+        android:layout_alignTop="@+id/tabelStudenti"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/avatar" />
+
+</RelativeLayout>

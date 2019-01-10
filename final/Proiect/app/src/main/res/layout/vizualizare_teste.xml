@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VizualizareTesteActivity"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_activitati"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/csharp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/csharpText"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <Space
+                    android:layout_width="136dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/veziTeste1"
+                    style="@android:style/Widget.DeviceDefault.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:onClick="vizualizareFragment"
+                    android:text="@string/categ1_SeeAll"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/java"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/javaText"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <Space
+                    android:layout_width="116dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/veziTeste2"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:onClick="vizualizareFragment"
+                    android:text="@string/categ1_SeeAll"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/javascript"/>
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/javascriptText"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <Space
+                    android:layout_width="67dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/veziTeste3"
+                    style="@android:style/Widget.DeviceDefault.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:onClick="vizualizareFragment"
+                    android:text="@string/categ1_SeeAll"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/html"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/css"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/htmlCssText"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/veziTeste4"
+                    style="@android:style/Widget.DeviceDefault.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:onClick="vizualizareFragment"
+                    android:text="@string/categ1_SeeAll"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/c"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cpp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/cCppText"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+                <Space
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/veziTeste5"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:onClick="vizualizareFragment"
+                    android:text="@string/categ1_SeeAll"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frame_fragmente">
+            </FrameLayout>
+
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>

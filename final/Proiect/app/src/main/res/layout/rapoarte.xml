@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RapoarteActivity"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/toolbar_activitati"></include>
+
+    <CalendarView
+        android:id="@+id/calendarRapoarte"
+        android:layout_width="306dp"
+        android:layout_height="297dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <ImageButton
+        android:id="@+id/rapStudentiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/calendarRapoarte"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-16dp"
+        android:layout_marginBottom="154dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/studentirap" />
+
+    <TextView
+        android:id="@+id/rapStudentiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarRapoarte"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="casual"
+        android:text="@string/rapStudentiText"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/rapGrupeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapStudentiTV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-175dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/gruperap" />
+
+    <TextView
+        android:id="@+id/rapGrupeTV"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapStudentiBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="-154dp"
+        android:layout_marginEnd="85dp"
+        android:fontFamily="casual"
+        android:text="@string/rapGrupeText"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/rapTesteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapGrupeTV"
+        android:layout_alignStart="@+id/rapStudentiBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="318dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/testerap" />
+
+    <TextView
+        android:id="@+id/rapTesteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapGrupeBtn"
+        android:layout_alignStart="@+id/rapStudentiTV"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="casual"
+        android:text="@string/rapTesteString"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/rapCategTesteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapTesteTv"
+        android:layout_alignEnd="@+id/rapGrupeBtn"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/categorietesterap" />
+
+    <TextView
+        android:id="@+id/rapCategTesteTv"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rapTesteBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="casual"
+        android:text="@string/rapCategTesteText"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

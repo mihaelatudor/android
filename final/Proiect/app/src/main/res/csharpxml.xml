@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <CSharp>
+        <CodTest codTest="1.0">
+            <NrIntrebare nr="1">
+                <Intrebare>Modificatorul de acces 'protected-internal' este:</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Accesibil numai din interiorul clasei si a claselor derivate in cadrul assembly-ului.</Raspuns1>
+                    <Raspuns2>Accesibil din interiorul si din exteriorul clasei. </Raspuns2>
+                    <Raspuns3>Aaccesibil numai din interiorul clasei.</Raspuns3>
+                    <Raspuns4>Accesibil numai din exteriorul clasei si a claselor derivate.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="2">
+                <Intrebare>In cazul in care nu se specifica niciun modificator de acces, atunci:</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Membrul este considerat private.</Raspuns1>
+                    <Raspuns2>Membrul este considerat protected. </Raspuns2>
+                    <Raspuns3>Membrul este considerat public.</Raspuns3>
+                    <Raspuns4>Membrul este considerat internal.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="3">
+                <Intrebare>Destructorii sunt metode care:</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Nu au drepturi de acces, nu au argumente si nu permit nici un fel de specificatori.</Raspuns1>
+                    <Raspuns2>Au drepturi de acces si nu permit nici un fel de specificatori.</Raspuns2>
+                    <Raspuns3>Pot fi invocati explicit.</Raspuns3>
+                    <Raspuns4>Au argumente si permit un fel de spcifiactori.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="4">
+                <Intrebare>Modificatorul new:</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Poate fi aplicat oricarui membru al unei clase, nu numai functiilor.</Raspuns1>
+                    <Raspuns2>Nu poate fi aplicat functiilor.</Raspuns2>
+                    <Raspuns3>Poate fi aplicat doar membrilor clasei, nu si functiilor.</Raspuns3>
+                    <Raspuns4>Nu poate fi aplicat membrilor clasei.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="5">
+                <Intrebare>Ce este o metoda virtuala in C#?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Este o metoda care poate fi suprascrisa intr-o clasa derivata.</Raspuns1>
+                    <Raspuns2>Este o metoda ce asigura faptul ca obiectele nu pot schimba starea interna a altor obiecte.</Raspuns2>
+                    <Raspuns3>Este abilitatea de a procesa obiectele in mod diferit in functie de tipul sau de clasa lor.</Raspuns3>
+                    <Raspuns4>Este o metoda ce permite unui obiect sa fie indexat.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="6">
+                <Intrebare>Ce se poate afirma despre o interfata?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>O interfata defineste un set de metode care  vor fi implementate de una sau mai multe clase.</Raspuns1>
+                    <Raspuns2>O interfata implementeaza metode.</Raspuns2>
+                    <Raspuns3>O interfata nu poate mosteni o alta interfata.</Raspuns3>
+                    <Raspuns4>Cand o clasa implementeaza o interfata nu trebuie sa implementeze toate metodele acesteia.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="7">
+                <Intrebare>Ce este o exceptie?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Este un obiect care incapsuleaza informatii despre o situatie anormala.</Raspuns1>
+                    <Raspuns2>Este o eroare aparuta in program.</Raspuns2>
+                    <Raspuns3>Este o vulnerabilitate software.</Raspuns3>
+                    <Raspuns4>Este o greseala intr-un sistem software care impiedica sistemul sa functioneze.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="8">
+                <Intrebare>Ce sunt delegarile?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Sunt tipuri de referinta care au rolul de a mentine o lista de metode cu aceeasi semnatura si apoi de a le apela simultan</Raspuns1>
+                    <Raspuns2>Este o metoda ce distruge instantele claselor.</Raspuns2>
+                    <Raspuns3>Sunt membri ai clasei cu ajutorul carora se acceseaza campurile private ca si cand ar fi fost declarate public.</Raspuns3>
+                    <Raspuns4>Sunt caracteristicile unor entitati de a se comporta in moduri diferite, in functie de context.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="9">
+                <Intrebare>Ce este o colectie?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Este o clasa specializata pentru memorarea si regasirea rapida a informatiilor.</Raspuns1>
+                    <Raspuns2>Este o metoda virtuala.</Raspuns2>
+                    <Raspuns3>Este o functie careia i se precizeaza doar antetul, urmand a fi implementata.</Raspuns3>
+                    <Raspuns4>Este o clasa derivata.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+            <NrIntrebare nr="10">
+                <Intrebare>Ce este o metoda?</Intrebare>
+                <Raspuns>
+                    <Raspuns1>Este un membru al  unei clase care implementeaza o actiune</Raspuns1>
+                    <Raspuns2>Este un membru al  unei clase care permite modificarea caracteristicilor unui obiect.</Raspuns2>
+                    <Raspuns3>Este un membru al  unei clase care permite clasei sa faca notifiacari.</Raspuns3>
+                    <Raspuns4>Este un obiect care incapsuleaza informatii deste o situatie anormala.</Raspuns4>
+                </Raspuns>
+            </NrIntrebare>
+        </CodTest>
+    </CSharp>
+</resources>
